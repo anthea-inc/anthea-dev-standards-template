@@ -1,0 +1,12 @@
+{
+  "name": "anthea-dev-standards-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "pnpm -r run clean && rm -rf node_modules",
+    "reset": "pnpm clean && pnpm i -r"
+  }
+}

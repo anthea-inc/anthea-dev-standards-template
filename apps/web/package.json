@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "clean": "rm -rf node_modules && rm -rf build",
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
