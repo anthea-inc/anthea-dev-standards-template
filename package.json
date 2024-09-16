@@ -1,10 +1,10 @@
 {
   "name": "anthea-dev-standards-template",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "license": "UNLICENSED",
   "author": "",
-  "license": "ISC",
   "scripts": {
     "clean": "pnpm -r run clean && rm -rf node_modules",
     "reset": "pnpm clean && pnpm i -r",
@@ -16,5 +16,11 @@
     "@biomejs/biome": "1.9.0",
     "turbo": "^2.1.2"
   },
-  "packageManager": "pnpm@8.15.6"
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": "use pnpm",
+    "pnpm": ">=9",
+    "yarn": "use pnpm"
+  },
+  "packageManager": "pnpm@9.5.0"
 }

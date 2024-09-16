@@ -1,5 +1,10 @@
 {
   "name": "api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "author": "",
   "scripts": {
     "clean": "rm -rf node_modules",
     "dev": "tsx watch src/index.ts"
