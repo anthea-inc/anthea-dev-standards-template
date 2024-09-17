@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "author": "",
   "scripts": {
-    "clean": "rm -rf node_modules && rm -rf build",
+    "clean": "rm -rf node_modules && rm -rf build && rm -rf .turbo",
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
