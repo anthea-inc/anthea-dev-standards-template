@@ -24,6 +24,9 @@ importers:
         specifier: ^4.6.1
         version: 4.6.1
     devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/config-typescript
       '@types/node':
         specifier: ^20.11.17
         version: 20.16.5
@@ -55,6 +58,9 @@ importers:
       '@remix-run/dev':
         specifier: ^2.12.0
         version: 2.12.0(@remix-run/react@2.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.0(typescript@5.6.2))(@types/node@20.16.5)(typescript@5.6.2)(vite@5.4.5(@types/node@20.16.5))
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/config-typescript
       '@types/react':
         specifier: ^18.3.5
         version: 18.3.5
@@ -70,6 +76,15 @@ importers:
       vite-tsconfig-paths:
         specifier: ^5.0.1
         version: 5.0.1(typescript@5.6.2)(vite@5.4.5(@types/node@20.16.5))
+
+  packages/config-typescript:
+    devDependencies:
+      '@tsconfig/recommended':
+        specifier: ^1.0.7
+        version: 1.0.7
+      '@tsconfig/strictest':
+        specifier: ^2.0.5
+        version: 2.0.5
 
 packages:
 
@@ -907,6 +922,12 @@ packages:
     resolution: {integrity: sha512-fOvu7PCQjAj4eWDEuD8Xz5gpzFqXzGlxHZozHP4b9Jxv9APtdxL6STqztDzMLuRXEc4UpXGGhx029Xgm91QBeA==}
     cpu: [x64]
     os: [win32]
+
+  '@tsconfig/recommended@1.0.7':
+    resolution: {integrity: sha512-xiNMgCuoy4mCL4JTywk9XFs5xpRUcKxtWEcMR6FNMtsgewYTIgIR+nvlP4A4iRCAzRsHMnPhvTRrzp4AGcRTEA==}
+
+  '@tsconfig/strictest@2.0.5':
+    resolution: {integrity: sha512-ec4tjL2Rr0pkZ5hww65c+EEPYwxOi4Ryv+0MtjeaSQRJyq322Q27eOQiFbuNgw2hpL4hB1/W/HBGk3VKS43osg==}
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -3555,6 +3576,10 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.21.3':
     optional: true
+
+  '@tsconfig/recommended@1.0.7': {}
+
+  '@tsconfig/strictest@2.0.5': {}
 
   '@types/acorn@4.0.6':
     dependencies:
